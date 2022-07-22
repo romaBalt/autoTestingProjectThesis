@@ -36,6 +36,12 @@ TS-C3 Test register new user :
 
 TS-C4 Test shopping cart:
 
+     * go to sale;
+     * put item from sale to a cart;
+     * go to check if item is added to a cart;
+     * expected result - item in the cart
+         
+
 
 TS-C5 Test wishlist:
    
