@@ -32,19 +32,23 @@ public class Common {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    public static void sendKeysByAction(By locator, String keys){
-        WebElement element = getElement(locator);
-        Actions action = new Actions(Driver.getDriver());
-
-        action.moveToElement(element);
-        action.sendKeys(keys);
-        action.build().perform();
-
+    public static void waitForElementToBeCickable(By locator) {
+        WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Constants.DURATION_TIMEOUT);
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));
     }
-//    public static void sendKeysToElement(By locator, String expectedSearchItem) {
-//        getElement(locator).getText();
-//
-//    }
+
+    public static void sendKeysToElement (By locator, String expectedSearchItem){
+        getElement(locator).getText();
+    }
+
+    public static void sendKeysToElementByAction(By locator, String message) {
+        WebElement element = getElement(locator);
+
+        Actions action = new Actions(Driver.getDriver());
+        action.moveToElement(element);
+        action.sendKeys(element, message);
+        action.perform();
+    }
 
     public static String getElementText(By locator) {
         return getElement(locator).getText();
@@ -88,4 +92,5 @@ public class Common {
                 )
         );
     }
+
 }

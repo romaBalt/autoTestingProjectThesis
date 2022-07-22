@@ -20,30 +20,23 @@ public class HomePage {
 
         }
     public static void performClick() {
-        pages.Common.clickByAction(Locators.BenuVaistine.HomePage.fieldSearchClicK);
+        pages.Common.waitForElementToBeCickable(Locators.BenuVaistine.HomePage.buttonSearchResults);
+        pages.Common.clickByAction(Locators.BenuVaistine.HomePage.buttonSearchResults);
     }
 
     public static void enterSearchItem(String expectedItem) {
-        Common.sendKeysByAction(
+        Common.sendKeysToElementByAction(
                 Locators.BenuVaistine.HomePage.inputSearchItem,
                 expectedItem
         );
     }
-//
-//    public static void selectItem(String value) {
-//        Common.selectOptionByValue(
-//                Locators.BenuVaistine.HomePage.selectItemFromTheList,
-//                value
-//        );
-//    }
-//
-//    public static void performClickOnItem() {
-//        pages.Common.doubleClickByAction(Locators.BenuVaistine.HomePage.clickOnItem);
-//    }
-////
-//    public static String readSearchResult() {
-//        return Common.getElementText(Locators.BenuVaistine.HomePage.searchItem);
-//    }
+
+    public static String readSearchResult(){
+        return Common.getElementText(Locators.BenuVaistine.HomePage.fieldSearchResult);
+
+    }
+
+
 }
 
 

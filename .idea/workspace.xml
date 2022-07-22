@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a859bf2-32a5-4e01-aa74-57bf1ea886b8" name="Changes" comment="added login class to BenuVaistine pages and tests">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/benuVaistine/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/benuVaistine/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/benuVaistine/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/benuVaistine/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/benuVaistine/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/benuVaistine/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/benuVaistine/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/benuVaistine/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Driver.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2C4rh0vnLD3XQj8DXvivt70GtU8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="TestNG.LogIn">
+    <configuration name="HomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="autoTestingProjectThesis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.benuVaistine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.baldai1Lt" />
+      <option name="MAIN_CLASS_NAME" value="tests.benuVaistine.HomePage" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePage.testingSearchInput" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="autoTestingProjectThesis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.benuVaistine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.benuVaistine" />
+      <option name="MAIN_CLASS_NAME" value="tests.benuVaistine.HomePage" />
+      <option name="METHOD_NAME" value="testingSearchInput" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogIn" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="autoTestingProjectThesis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.benuVaistine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.benuVaistine" />
+      <option name="MAIN_CLASS_NAME" value="tests.benuVaistine.LogIn" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogIn.testingLoginInputs" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="autoTestingProjectThesis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.benuVaistine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.benuVaistine" />
+      <option name="MAIN_CLASS_NAME" value="tests.benuVaistine.LogIn" />
+      <option name="METHOD_NAME" value="testingLoginInputs" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogIn.testingRegistrationInputs" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="autoTestingProjectThesis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.benuVaistine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.benuVaistine" />
+      <option name="MAIN_CLASS_NAME" value="tests.benuVaistine.LogIn" />
+      <option name="METHOD_NAME" value="testingRegistrationInputs" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LogIn" />
+        <item itemvalue="TestNG.LogIn.testingRegistrationInputs" />
+        <item itemvalue="TestNG.LogIn.testingLoginInputs" />
+        <item itemvalue="TestNG.HomePage" />
+        <item itemvalue="TestNG.HomePage.testingSearchInput" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a859bf2-32a5-4e01-aa74-57bf1ea886b8" name="Changes" comment="" />
+      <created>1658072815729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658072815729</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1658075338960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658075338960</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add README.md file to project">
+      <created>1658076636051</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658076636051</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add testng library">
+      <created>1658077501716</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658077501716</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added selenium library and github">
+      <created>1658080036052</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658080036052</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added chrome drivers to Driver.java">
+      <created>1658080101424</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658080101424</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added drivers to Driver">
+      <created>1658475226440</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475226440</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added TestListener">
+      <created>1658475265780</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475265780</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created test and pages">
+      <created>1658475311766</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475311766</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added baseTest and Constants">
+      <created>1658475342827</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475342827</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added Locators">
+      <created>1658475373954</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475373954</updated>
+    </task>
+    <task id="LOCAL-00011" summary="created methods in Common.java">
+      <created>1658475418048</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475418048</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added login class to BenuVaistine pages and tests">
+      <created>1658483371709</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658483371709</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Add README.md file to project" />
+    <MESSAGE value="Add testng library" />
+    <MESSAGE value="Added selenium library and github" />
+    <MESSAGE value="added chrome drivers to Driver.java" />
+    <MESSAGE value="added drivers to Driver" />
+    <MESSAGE value="added TestListener" />
+    <MESSAGE value="Created test and pages" />
+    <MESSAGE value="added baseTest and Constants" />
+    <MESSAGE value="added Locators" />
+    <MESSAGE value="created methods in Common.java" />
+    <MESSAGE value="added login class to BenuVaistine pages and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login class to BenuVaistine pages and tests" />
+  </component>
+</project>

@@ -23,10 +23,11 @@ public class Driver {
        driver.get().manage().timeouts().implicitlyWait(Constants.DURATION_TIMEOUT);
 
    }
-//  public static void closeDriver(){
-//        driver.get().quit();
-//        driver.remove();
-//  }
+
+    public static void closeDriver() {
+        driver.get().quit();
+        driver.remove();
+    }
 }
 
 
