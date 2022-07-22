@@ -20,7 +20,6 @@ public class Locators {
 
         public static class LogIn {
 
-
             public static By inputLoginEmail = By.xpath("//*[@id=\"email\"]");
             public static By inputLoginPassword = By.xpath("//*[@id=\"password\"]");
             public static By buttonLogin = By.xpath("//button[@type=\"submit\"]");
@@ -38,8 +37,15 @@ public class Locators {
             public static By buttonRegister = By.xpath("//*[@id=\"coreRegistrationForm\"]/button");
             public static By successfullRegistrationMessage = By.xpath("//*[@id=\"coreRegistrationForm\"]");
 
+        }
 
+        public static class ShoppingCart {
 
+            public static By goToSaleItems = By.xpath("//*[@class=\"module-2059 lvl-1 menu_noChilds\"]");
+            public static By selectItemFromSale = By.xpath("//*[@id=\"chainLink-12768\"]/div/section/div/div/div[3]/div/div/div/h3/a");
+            public static By buttonPutItemToCart = By.xpath("<button class=\"bnButton bnButton--green bnButton--full bind-addToCart\" data-productdatawrap=\"productItemData_wrap-10014039\">Į krepšelį</button>");
+            public static By buttonViewCart = By.xpath("<button class=\"bnButton bnButton--green bnButton--full bind-addToCart\" data-productdatawrap=\"productItemData_wrap-10014039\">Į krepšelį</button>");
+            public static By fieldCartMessage = By.xpath("//*[@class=\"cart_cartDataAboveCounter\"]");
         }
 
     }
