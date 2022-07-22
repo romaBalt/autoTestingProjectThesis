@@ -39,9 +39,16 @@ TS-C4 Test shopping cart:
      * go to sale;
      * put item from sale to a cart;
      * go to check if item is added to a cart;
-     * expected result - item in the cart
+     * expected result - item in the cart.
          
 
 
-TS-C5 Test wishlist:
+TS-C5 Test find pharmacy:
+
+      * click on Pharmacy Search;
+      * choose city from the list;
+      * check box On Duty 24/7;
+      * click on Result;
+      * expexted result - opened window with information.
+
    
