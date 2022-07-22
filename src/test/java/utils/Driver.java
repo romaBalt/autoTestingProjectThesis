@@ -20,6 +20,7 @@ public class Driver {
        options.addArguments("--force-device-scale-factor=0.8");
 
        driver.set(new ChromeDriver(options));
+       driver.get().manage().window().setSize(new Dimension(2000, 5000));
        driver.get().manage().timeouts().implicitlyWait(Constants.DURATION_TIMEOUT);
 
    }
