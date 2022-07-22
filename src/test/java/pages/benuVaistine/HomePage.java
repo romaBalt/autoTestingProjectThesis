@@ -24,7 +24,7 @@ public class HomePage {
     }
 
     public static void enterSearchItem(String expectedItem) {
-        Common.sendKeysToElement(
+        Common.sendKeysByAction(
                 Locators.BenuVaistine.HomePage.inputSearchItem,
                 expectedItem
         );

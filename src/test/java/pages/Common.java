@@ -32,10 +32,19 @@ public class Common {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    public static void sendKeysToElement(By locator, String expectedSearchItem) {
-        getElement(locator).getText();
+    public static void sendKeysByAction(By locator, String keys){
+        WebElement element = getElement(locator);
+        Actions action = new Actions(Driver.getDriver());
+
+        action.moveToElement(element);
+        action.sendKeys(keys);
+        action.build().perform();
 
     }
+//    public static void sendKeysToElement(By locator, String expectedSearchItem) {
+//        getElement(locator).getText();
+//
+//    }
 
     public static String getElementText(By locator) {
         return getElement(locator).getText();
