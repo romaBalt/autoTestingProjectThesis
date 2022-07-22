@@ -15,7 +15,6 @@ public class Locators {
             public static By inputSearchItem = By.xpath("//*[@id=\"headerSearch\"]");
             public static By fieldSearchResult = By.xpath("//*[@id=\"intuero\"]/div[4]/div[2]/h2/span");
 
-
        }
 
         public static class LogIn {
@@ -42,11 +41,19 @@ public class Locators {
         public static class ShoppingCart {
 
             public static By goToSaleItems = By.xpath("//*[@class=\"module-2059 lvl-1 menu_noChilds\"]");
-            public static By selectItemFromSale = By.xpath("//*[@id=\"chainLink-12768\"]/div/section/div/div/div[3]/div/div/div/h3/a");
+            public static By selectItemFromSale = By.xpath("//*[@id=\"chainLink-12768\"]/div/section/div/div/div[1]/div/div/a/img");
             public static By buttonPutItemToCart = By.xpath("<button class=\"bnButton bnButton--green bnButton--full bind-addToCart\" data-productdatawrap=\"productItemData_wrap-10014039\">Į krepšelį</button>");
             public static By buttonViewCart = By.xpath("<button class=\"bnButton bnButton--green bnButton--full bind-addToCart\" data-productdatawrap=\"productItemData_wrap-10014039\">Į krepšelį</button>");
             public static By fieldCartMessage = By.xpath("//*[@class=\"cart_cartDataAboveCounter\"]");
         }
 
+        public static class FindPharmacy{
+
+            public static By buttonPharmacySearch = By.xpath("/html/body/header/div[1]/div/div/div[2]/nav/ul[1]/li[2]/a");
+            public static By buttonSearchCity = By.xpath("//*[@class=\"customSelectVisible\"]");
+            public static By chooseCityFromList = By.xpath("//*[@id=\"intuero\"]/div[4]/div[5]/div[1]/div[2]/div[2]/div[27]");
+            public static By checkBoxOnDuty = By.xpath("//*[@id=\"intuero\"]/div[4]/div[5]/div[1]/div[3]/div[2]/label/span");
+            public static By chooseResult = By.xpath("//*[@class=\"address showSingle\"]");
+        }
     }
 }
