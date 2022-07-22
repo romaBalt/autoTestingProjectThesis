@@ -10,15 +10,17 @@ public class HomePage {
         pages.Common.openUrl("https://www.benu.lt/?gclid=EAIaIQobChMI_PWzsvyL-QIVUOJ3Ch30yQnzEAAYASAAEgLH7_D_BwE");
     }
 
-    public static void  closeCookies() {
+    public static void closeCookies() {
         Common.waitForCookiesFormToBeVisible(Locators.BenuVaistine.HomePage.formCookies);
         Common.clickElement(Locators.BenuVaistine.HomePage.buttonCloseCookies);
     }
+
     public static void closeAdd() {
         Common.waitForAddFormToBeVisible(Locators.BenuVaistine.HomePage.formAdd);
         Common.clickElement(Locators.BenuVaistine.HomePage.buttonCloseAdd);
 
-        }
+    }
+
     public static void performClick() {
         pages.Common.waitForElementToBeCickable(Locators.BenuVaistine.HomePage.buttonSearchResults);
         pages.Common.clickByAction(Locators.BenuVaistine.HomePage.buttonSearchResults);
@@ -31,11 +33,10 @@ public class HomePage {
         );
     }
 
-    public static String readSearchResult(){
+    public static String readSearchResult() {
         return Common.getElementText(Locators.BenuVaistine.HomePage.fieldSearchResult);
 
     }
-
 
 }
 

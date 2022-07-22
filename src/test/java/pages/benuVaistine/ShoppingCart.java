@@ -30,6 +30,7 @@ public class ShoppingCart {
         pages.Common.clickByAction(Locators.BenuVaistine.ShoppingCart.selectItemFromSale);
 
     }
+
     public static void clickItemToCartButton() {
         pages.Common.waitForElementToBeCickable(Locators.BenuVaistine.ShoppingCart.buttonPutItemToCart);
         pages.Common.clickByAction(Locators.BenuVaistine.ShoppingCart.buttonPutItemToCart);
@@ -39,7 +40,7 @@ public class ShoppingCart {
         pages.Common.clickByAction(Locators.BenuVaistine.ShoppingCart.buttonViewCart);
     }
 
-    public static String readCartMessage(){
+    public static String readCartMessage() {
         return Common.getElementText(Locators.BenuVaistine.ShoppingCart.fieldCartMessage);
 
     }

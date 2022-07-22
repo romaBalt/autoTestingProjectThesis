@@ -37,7 +37,7 @@ public class Common {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    public static void sendKeysToElement (By locator, String expectedSearchItem){
+    public static void sendKeysToElement(By locator, String expectedSearchItem) {
         getElement(locator).getText();
     }
 
@@ -61,7 +61,7 @@ public class Common {
         action.moveToElement(element);
         action.click();
         action.perform();
-}
+    }
 
 
     public static void selectOptionByValue(By locator, String value) {
@@ -79,6 +79,7 @@ public class Common {
         action.perform();
 
     }
+
     public static void waitForElementAttributeContains(
             By locator,
             String attributeName,

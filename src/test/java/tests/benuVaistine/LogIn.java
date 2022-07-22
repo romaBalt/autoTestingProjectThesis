@@ -17,7 +17,7 @@ public class LogIn extends BaseTest {
     }
 
     @Test
-    public void testingLoginInputs(){
+    public void testingLoginInputs() {
         String inputLoginEmail = "jonas@jonas.lt";
         String inputLoginPassword = "Jonasjonas123";
 
@@ -33,7 +33,7 @@ public class LogIn extends BaseTest {
     }
 
     @Test
-    public void testingRegistrationInputs(){
+    public void testingRegistrationInputs() {
         String inputName = "Roma";
         String inputSurname = "Baltrusaitis";
         String inputEmail = "romabalt@yahoo.com";
@@ -58,8 +58,7 @@ public class LogIn extends BaseTest {
         pages.benuVaistine.LogIn.clickRegisterButton();
         actualMessage = pages.benuVaistine.LogIn.readRegistrationMessage();
 
-//        Assert.assertTrue(actualMessage.contains(expectedMessage));
-
+        Assert.assertTrue(actualMessage.contains(expectedMessage));
     }
 
 }

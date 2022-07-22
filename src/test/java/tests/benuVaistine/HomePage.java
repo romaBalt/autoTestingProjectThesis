@@ -21,7 +21,6 @@ public class HomePage extends BaseTest {
         String expectedItem = "vitaminas c";
         String actualItem;
 
-
         pages.benuVaistine.HomePage.enterSearchItem(expectedItem);
         pages.benuVaistine.HomePage.performClick();
         actualItem = pages.benuVaistine.HomePage.readSearchResult();
@@ -29,7 +28,6 @@ public class HomePage extends BaseTest {
         Assert.assertTrue(actualItem.contains(expectedItem));
 
     }
-
 
 }
 

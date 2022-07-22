@@ -24,11 +24,11 @@ public class ShoppingCart extends BaseTest {
         pages.benuVaistine.ShoppingCart.enterToSale();
         pages.benuVaistine.ShoppingCart.chooseItemFromSale();
         pages.benuVaistine.ShoppingCart.clickItemToCartButton();
-//        pages.benuVaistine.ShoppingCart.clickViewCartButton();
-//        actualCartMessage = pages.benuVaistine.ShoppingCart.readCartMessage();
-//
-//
-//        Assert.assertEquals(actualCartMessage, expectedCartMessage);
+        pages.benuVaistine.ShoppingCart.clickViewCartButton();
+        actualCartMessage = pages.benuVaistine.ShoppingCart.readCartMessage();
+
+
+        Assert.assertEquals(actualCartMessage, expectedCartMessage);
 
     }
 

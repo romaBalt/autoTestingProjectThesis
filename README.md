@@ -6,7 +6,7 @@
     * Selenium `org.seleniumhq.selenium:selenium-java`
     * WebDriverManager `io.github.bonigarcia:webdrivermanager`
 
-# Tests:
+## Tests:
 ### TS-C1 Test search function:
 ###### steps:
     * enter item in search field; (entry value "vitaminas c")

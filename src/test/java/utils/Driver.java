@@ -11,19 +11,21 @@ import java.util.Map;
 public class Driver {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-    public static WebDriver getDriver() { return driver.get();}
+    public static WebDriver getDriver() {
+        return driver.get();
+    }
 
-   public static void  setDriver(){
+    public static void setDriver() {
 
-       WebDriverManager.chromedriver().setup();
-       ChromeOptions options = new ChromeOptions();
-       options.addArguments("--force-device-scale-factor=0.8");
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--force-device-scale-factor=0.8");
 
-       driver.set(new ChromeDriver(options));
-       driver.get().manage().window().setSize(new Dimension(2000, 5000));
-       driver.get().manage().timeouts().implicitlyWait(Constants.DURATION_TIMEOUT);
+        driver.set(new ChromeDriver(options));
+        driver.get().manage().window().setSize(new Dimension(2000, 5000));
+        driver.get().manage().timeouts().implicitlyWait(Constants.DURATION_TIMEOUT);
 
-   }
+    }
 
     public static void closeDriver() {
         driver.get().quit();

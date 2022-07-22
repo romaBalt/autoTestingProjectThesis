@@ -14,13 +14,11 @@ public class LogIn {
         Common.clickElement(Locators.BenuVaistine.HomePage.buttonCloseCookies);
     }
 
-
-    public static void enterLoginEmail(String expectedLoginEmail){
+    public static void enterLoginEmail(String expectedLoginEmail) {
         Common.sendKeysToElementByAction(
                 Locators.BenuVaistine.LogIn.inputLoginEmail,
                 expectedLoginEmail
         );
-
     }
 
     public static void enterLoginPassword(String expectedLoginPassword) {
@@ -30,15 +28,14 @@ public class LogIn {
         );
     }
 
-    public static void clickButtonLogin(){
+    public static void clickButtonLogin() {
         pages.Common.clickByAction(Locators.BenuVaistine.LogIn.buttonLogin);
 
     }
 
     public static String readLoginMessage() {
-        return   Common.getElementText(Locators.BenuVaistine.LogIn.fieldLoginMessage);
+        return Common.getElementText(Locators.BenuVaistine.LogIn.fieldLoginMessage);
     }
-
 
     public static void startRegistration() {
         pages.Common.waitForElementToBeCickable(Locators.BenuVaistine.LogIn.startRegistrationClick);
@@ -104,7 +101,7 @@ public class LogIn {
     }
 
     public static String readRegistrationMessage() {
-     return   Common.getElementText(Locators.BenuVaistine.LogIn.successfullRegistrationMessage);
+        return Common.getElementText(Locators.BenuVaistine.LogIn.successfullRegistrationMessage);
     }
 
 }
