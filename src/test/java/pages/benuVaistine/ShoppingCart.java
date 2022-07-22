@@ -26,10 +26,12 @@ public class ShoppingCart {
     }
 
     public static void chooseItemFromSale() {
+        pages.Common.waitForElementToBeCickable(Locators.BenuVaistine.ShoppingCart.selectItemFromSale);
         pages.Common.clickByAction(Locators.BenuVaistine.ShoppingCart.selectItemFromSale);
 
     }
     public static void clickItemToCartButton() {
+        pages.Common.waitForElementToBeCickable(Locators.BenuVaistine.ShoppingCart.buttonPutItemToCart);
         pages.Common.clickByAction(Locators.BenuVaistine.ShoppingCart.buttonPutItemToCart);
     }
 
@@ -41,4 +43,5 @@ public class ShoppingCart {
         return Common.getElementText(Locators.BenuVaistine.ShoppingCart.fieldCartMessage);
 
     }
+
 }
