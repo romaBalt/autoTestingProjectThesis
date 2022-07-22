@@ -17,15 +17,16 @@ public class Driver {
 
        WebDriverManager.chromedriver().setup();
        ChromeOptions options = new ChromeOptions();
+       options.addArguments("--force-device-scale-factor=0.8");
 
        driver.set(new ChromeDriver(options));
-       driver.get().manage().window().setSize(new Dimension(1080, 2000 ));
+       driver.get().manage().timeouts().implicitlyWait(Constants.DURATION_TIMEOUT);
 
    }
-  public static void closeDriver(){
-        driver.get().quit();
-        driver.remove();
-  }
+//  public static void closeDriver(){
+//        driver.get().quit();
+//        driver.remove();
+//  }
 }
 
 
