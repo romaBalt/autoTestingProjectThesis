@@ -58,9 +58,9 @@ public class Locators {
             public static By selectItemFromSale =
                     By.xpath("//*[@id=\"chainLink-12768\"]/div/section/div/div/div[1]/div/div/a/img");
             public static By buttonPutItemToCart =
-                    By.xpath("<button class=\"bnButton bnButton--green bnButton--full bind-addToCart\" data-productdatawrap=\"productItemData_wrap-10014039\">Į krepšelį</button>");
+                    By.xpath("(//button[@class=\"bnButton bnButton--green bnButton--full bind-addToCart\"])[2]");
             public static By buttonViewCart =
-                    By.xpath("<button class=\"bnButton bnButton--green bnButton--full bind-addToCart\" data-productdatawrap=\"productItemData_wrap-10014039\">Į krepšelį</button>");
+                    By.xpath("//*[@class=\"button button--green viewCart\"]");
             public static By fieldCartMessage =
                     By.xpath("//*[@class=\"cart_cartDataAboveCounter\"]");
         }

@@ -37,6 +37,7 @@ public class ShoppingCart {
     }
 
     public static void clickViewCartButton() {
+        pages.Common.waitForElementToBeCickable(Locators.BenuVaistine.ShoppingCart.buttonViewCart);
         pages.Common.clickByAction(Locators.BenuVaistine.ShoppingCart.buttonViewCart);
     }
 
