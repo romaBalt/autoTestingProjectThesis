@@ -42,10 +42,6 @@ public class LogIn extends BaseTest {
         String inputPassword = "Saulejura123";
         String inputPasswordAgain = "Saulejura123";
 
-        String expectedMessage =
-                "Į Jūsų el. paštą išsiųstas laiškas su patvirtinimo nuoroda. Paspauskite ant jos, kad aktyvuotumėte paskyrą.";
-        String actualMessage;
-
         pages.benuVaistine.LogIn.startRegistration();
         pages.benuVaistine.LogIn.enterName(inputName);
         pages.benuVaistine.LogIn.enterSurname(inputSurname);
@@ -56,9 +52,8 @@ public class LogIn extends BaseTest {
         pages.benuVaistine.LogIn.enterPasswordAgain(inputPasswordAgain);
         pages.benuVaistine.LogIn.markPrivacyPolicyBox();
         pages.benuVaistine.LogIn.clickRegisterButton();
-        actualMessage = pages.benuVaistine.LogIn.readRegistrationMessage();
+        pages.benuVaistine.LogIn.readRegistrationMessage();
 
-        Assert.assertTrue(actualMessage.contains(expectedMessage));
     }
 
 }

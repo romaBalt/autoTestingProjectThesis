@@ -27,6 +27,7 @@ public class FindPharmacy {
     }
 
     public static void enterCitySearch() {
+        pages.Common.waitForElementToBeCickable(Locators.BenuVaistine.FindPharmacy.buttonSearchCity);
         pages.Common.clickByAction(Locators.BenuVaistine.FindPharmacy.buttonSearchCity);
 
     }
@@ -45,4 +46,6 @@ public class FindPharmacy {
         pages.Common.clickByAction(Locators.BenuVaistine.FindPharmacy.chooseResult);
 
     }
+
+
 }

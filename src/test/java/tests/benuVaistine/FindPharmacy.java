@@ -19,10 +19,12 @@ public class FindPharmacy extends BaseTest {
     @Test
     public void testingPharmacySearch() {
 
+
         pages.benuVaistine.FindPharmacy.enterPharmacySearch();
         pages.benuVaistine.FindPharmacy.enterCitySearch();
         pages.benuVaistine.FindPharmacy.searchCityFromList();
         pages.benuVaistine.FindPharmacy.checkBox();
         pages.benuVaistine.FindPharmacy.clickOnResult();
+
     }
 }

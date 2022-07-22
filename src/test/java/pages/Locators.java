@@ -77,6 +77,7 @@ public class Locators {
                     By.xpath("//*[@id=\"intuero\"]/div[4]/div[5]/div[1]/div[3]/div[2]/label/span");
             public static By chooseResult =
                     By.xpath("//*[@class=\"address showSingle\"]");
+
         }
     }
 }
