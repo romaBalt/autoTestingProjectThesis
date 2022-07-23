@@ -70,13 +70,13 @@ public class LogIn {
     }
 
     public static void enterPassword(String expectedPassword) {
-        Common.sendKeysToElementByAction(Locators.BenuVaistine.LogIn.inputPassword,
+        Common.setElementValue(Locators.BenuVaistine.LogIn.inputPassword,
                 expectedPassword
         );
     }
 
     public static void enterPasswordAgain(String expectedPasswordAgain) {
-        Common.sendKeysToElementByAction(Locators.BenuVaistine.LogIn.inputPasswordAgain,
+        Common.setElementValue(Locators.BenuVaistine.LogIn.inputPasswordAgain,
                 expectedPasswordAgain
         );
     }

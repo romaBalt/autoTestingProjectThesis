@@ -35,8 +35,7 @@ public class Common {
 
     public static void waitForTextToBeInLogin(By locator) {
         WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Constants.DURATION_TIMEOUT);
-        webDriverWait.until(
-                ExpectedConditions.textToBe(
+        webDriverWait.until(ExpectedConditions.textToBe(
                         locator, "Į Jūsų el. paštą išsiųstas laiškas su patvirtinimo nuoroda. " +
                                 "Paspauskite ant jos, kad aktyvuotumėte paskyrą."));
     }
@@ -52,6 +51,10 @@ public class Common {
         action.moveToElement(element);
         action.sendKeys(element, message);
         action.perform();
+    }
+
+    public static void setElementValue(By locator, String message) {
+        getElement(locator).sendKeys("value", message);
     }
 
     public static String getElementText(By locator) {
