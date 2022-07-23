@@ -10,8 +10,12 @@ public class LogIn {
     }
 
     public static void closeCookies() {
-        Common.waitForCookiesFormToBeVisible(Locators.BenuVaistine.HomePage.formCookies);
-        Common.clickElement(Locators.BenuVaistine.HomePage.buttonCloseCookies);
+        Common.waitForElementToBeVisible(
+                Locators.BenuVaistine.HomePage.formCookies
+        );
+        Common.clickElement(
+                Locators.BenuVaistine.HomePage.buttonCloseCookies
+        );
     }
 
     public static void enterLoginEmail(String expectedLoginEmail) {
@@ -29,18 +33,22 @@ public class LogIn {
     }
 
     public static void clickButtonLogin() {
-        pages.Common.clickByAction(Locators.BenuVaistine.LogIn.buttonLogin);
-
+        pages.Common.clickByAction(
+                Locators.BenuVaistine.LogIn.buttonLogin
+        );
     }
 
     public static String readLoginMessage() {
-        return Common.getElementText(Locators.BenuVaistine.LogIn.fieldLoginMessage);
+        return Common.getElementText(
+                Locators.BenuVaistine.LogIn.fieldLoginMessage
+        );
     }
 
     public static void startRegistration() {
-        pages.Common.waitForElementToBeCickable(Locators.BenuVaistine.LogIn.startRegistrationClick);
-        pages.Common.clickByAction(Locators.BenuVaistine.LogIn.startRegistrationClick);
-
+        pages.Common.waitForElementToBeCickable(
+                Locators.BenuVaistine.LogIn.startRegistrationClick);
+        pages.Common.clickByAction(
+                Locators.BenuVaistine.LogIn.startRegistrationClick);
     }
 
     public static void enterName(String expectedName) {
@@ -93,16 +101,25 @@ public class LogIn {
     }
 
     public static void markPrivacyPolicyBox() {
-        pages.Common.clickByAction(Locators.BenuVaistine.LogIn.checkPrivacyPolicyBox);
+        pages.Common.clickByAction(
+                Locators.BenuVaistine.LogIn.checkPrivacyPolicyBox
+        );
     }
 
     public static void clickRegisterButton() {
-        pages.Common.clickByAction(Locators.BenuVaistine.LogIn.buttonRegister);
+        pages.Common.waitForElementToBeCickable(
+                Locators.BenuVaistine.LogIn.buttonRegister);
+        pages.Common.clickByAction(
+                Locators.BenuVaistine.LogIn.buttonRegister
+        );
     }
 
     public static String readRegistrationMessage() {
-        return Common.getElementText(Locators.BenuVaistine.LogIn.successfullRegistrationMessage);
+        pages.Common.waitForElementToBeVisible(
+                Locators.BenuVaistine.LogIn.successfullRegistrationMessage);
+        return Common.getElementText(
+                Locators.BenuVaistine.LogIn.successfullRegistrationMessage
+        );
     }
-
 }
 

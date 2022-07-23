@@ -1,5 +1,6 @@
 package tests.benuVaistine;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -13,7 +14,6 @@ public class LogIn extends BaseTest {
         super.setUp();
         pages.benuVaistine.LogIn.open();
         pages.benuVaistine.LogIn.closeCookies();
-
     }
 
     @Test
@@ -38,9 +38,14 @@ public class LogIn extends BaseTest {
         String inputSurname = "Baltrusaitis";
         String inputEmail = "romabalt@yahoo.com";
         String inputPhoneNumber = "8288822";
-        String inputBirthDate = "1988 08 08";
+        String inputBirthDate = "1988-08-08";
         String inputPassword = "Saulejura123";
         String inputPasswordAgain = "Saulejura123";
+
+        String expectedResult =
+                "Į Jūsų el. paštą išsiųstas laiškas su patvirtinimo nuoroda. " +
+                        "Paspauskite ant jos, kad aktyvuotumėte paskyrą.";
+        String actualResult;
 
         pages.benuVaistine.LogIn.startRegistration();
         pages.benuVaistine.LogIn.enterName(inputName);
@@ -52,8 +57,8 @@ public class LogIn extends BaseTest {
         pages.benuVaistine.LogIn.enterPasswordAgain(inputPasswordAgain);
         pages.benuVaistine.LogIn.markPrivacyPolicyBox();
         pages.benuVaistine.LogIn.clickRegisterButton();
-        pages.benuVaistine.LogIn.readRegistrationMessage();
+        actualResult = pages.benuVaistine.LogIn.readRegistrationMessage();
 
+        Assert.assertTrue(actualResult.contains(expectedResult));
     }
-
 }
