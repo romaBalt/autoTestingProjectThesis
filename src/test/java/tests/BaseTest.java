@@ -10,12 +10,12 @@ import utils.TestListener;
 public class BaseTest {
 
     @BeforeMethod
-    public void setUp(){Driver.setDriver();}
+    public void setUp() {
+        Driver.setDriver();
+    }
 
     @AfterMethod
-    public void teardown() {Driver.closeDriver();}
-
-
-
-
+    public void teardown() {
+        Driver.closeDriver();
+    }
 }

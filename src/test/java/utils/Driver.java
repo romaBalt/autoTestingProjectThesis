@@ -6,8 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.util.Map;
-
 public class Driver {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
@@ -16,7 +14,6 @@ public class Driver {
     }
 
     public static void setDriver() {
-
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--force-device-scale-factor=0.8");
@@ -24,7 +21,6 @@ public class Driver {
         driver.set(new ChromeDriver(options));
         driver.get().manage().window().setSize(new Dimension(2000, 5000));
         driver.get().manage().timeouts().implicitlyWait(Constants.DURATION_TIMEOUT);
-
     }
 
     public static void closeDriver() {

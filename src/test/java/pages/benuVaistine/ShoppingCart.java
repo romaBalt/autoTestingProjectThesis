@@ -10,25 +10,22 @@ public class ShoppingCart {
     }
 
     public static void closeCookies() {
-        Common.waitForCookiesFormToBeVisible(Locators.BenuVaistine.HomePage.formCookies);
+        Common.waitForElementToBeVisible(Locators.BenuVaistine.HomePage.formCookies);
         Common.clickElement(Locators.BenuVaistine.HomePage.buttonCloseCookies);
     }
 
     public static void closeAdd() {
-        Common.waitForAddFormToBeVisible(Locators.BenuVaistine.HomePage.formAdd);
+        Common.waitForElementToBeVisible(Locators.BenuVaistine.HomePage.formAdd);
         Common.clickElement(Locators.BenuVaistine.HomePage.buttonCloseAdd);
-
     }
 
     public static void enterToSale() {
         pages.Common.clickByAction(Locators.BenuVaistine.ShoppingCart.goToSaleItems);
-
     }
 
     public static void chooseItemFromSale() {
         pages.Common.waitForElementToBeCickable(Locators.BenuVaistine.ShoppingCart.selectItemFromSale);
         pages.Common.clickByAction(Locators.BenuVaistine.ShoppingCart.selectItemFromSale);
-
     }
 
     public static void clickItemToCartButton() {
@@ -43,7 +40,5 @@ public class ShoppingCart {
 
     public static String readCartMessage() {
         return Common.getElementText(Locators.BenuVaistine.ShoppingCart.fieldCartMessage);
-
     }
-
 }

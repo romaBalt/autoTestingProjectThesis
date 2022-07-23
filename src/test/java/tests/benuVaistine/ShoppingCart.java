@@ -28,7 +28,5 @@ public class ShoppingCart extends BaseTest {
         actualCartMessage = pages.benuVaistine.ShoppingCart.readCartMessage();
 
         Assert.assertEquals(actualCartMessage, expectedCartMessage);
-
     }
-
 }

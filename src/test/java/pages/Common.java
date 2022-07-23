@@ -4,12 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Constants;
 import utils.Driver;
 
 public class Common {
+
     public static void openUrl(String url) {
         Driver.getDriver().get(url);
     }
@@ -18,18 +18,9 @@ public class Common {
         return Driver.getDriver().findElement(Locator);
     }
 
-    public static void waitForCookiesFormToBeVisible(By locator) {
+    public static void waitForElementToBeVisible(By locator) {
         WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Constants.DURATION_TIMEOUT);
-        webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));
-    }
-
-    public static void clickElement(By locator) {
-        getElement(locator).click();
-    }
-
-    public static void waitForAddFormToBeVisible(By locator) {
-        WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Constants.DURATION_TIMEOUT);
-        webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     public static void waitForElementToBeCickable(By locator) {
@@ -37,8 +28,21 @@ public class Common {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    public static void sendKeysToElement(By locator, String expectedSearchItem) {
-        getElement(locator).getText();
+    public static void waitForTextToBeInPharmacySearch(By locator) {
+        WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Constants.DURATION_TIMEOUT);
+        webDriverWait.until(ExpectedConditions.textToBe(locator, "Žirmūnų g. 64, Hyper RIMI"));
+    }
+
+    public static void waitForTextToBeInLogin(By locator) {
+        WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Constants.DURATION_TIMEOUT);
+        webDriverWait.until(
+                ExpectedConditions.textToBe(
+                        locator, "Į Jūsų el. paštą išsiųstas laiškas su patvirtinimo nuoroda. " +
+                                "Paspauskite ant jos, kad aktyvuotumėte paskyrą."));
+    }
+
+    public static void clickElement(By locator) {
+        getElement(locator).click();
     }
 
     public static void sendKeysToElementByAction(By locator, String message) {
@@ -59,39 +63,9 @@ public class Common {
 
         Actions action = new Actions(Driver.getDriver());
         action.moveToElement(element);
-        action.click();
+        action.click(element);
         action.perform();
     }
-
-
-    public static void selectOptionByValue(By locator, String value) {
-        WebElement webElement = getElement(locator);
-        Select selectElement = new Select(webElement);
-        selectElement.selectByValue(value);
-    }
-
-    public static void doubleClickByAction(By locator) {
-        WebElement element = getElement(locator);
-
-        Actions action = new Actions(Driver.getDriver());
-        action.moveToElement(element);
-        action.doubleClick(element);
-        action.perform();
-
-    }
-
-    public static void waitForElementAttributeContains(
-            By locator,
-            String attributeName,
-            String attributeValue) {
-        WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Constants.DURATION_TIMEOUT);
-        webDriverWait.until(
-                ExpectedConditions.attributeContains(
-                        locator,
-                        attributeName,
-                        attributeValue
-                )
-        );
-    }
-
 }
+
+

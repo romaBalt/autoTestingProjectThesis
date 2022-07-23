@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 public class Locators {
 
     public static class BenuVaistine {
+
         public static class HomePage {
 
             public static By formCookies = By.xpath("//*[@id=\"CybotCookiebotDialogBody\"]");
@@ -16,7 +17,6 @@ public class Locators {
             public static By buttonSearchResults = By.xpath("//button[@type=\"submit\"]");
             public static By inputSearchItem = By.xpath("//*[@id=\"headerSearch\"]");
             public static By fieldSearchResult = By.xpath("//*[@id=\"intuero\"]/div[4]/div[2]/h2/span");
-
         }
 
         public static class LogIn {
@@ -45,10 +45,9 @@ public class Locators {
             public static By checkPrivacyPolicyBox =
                     By.xpath("//*[@id=\"coreRegistrationForm\"]/div[10]/div/label/span[2]");
             public static By buttonRegister =
-                    By.xpath("//*[@id=\"coreRegistrationForm\"]/button");
+                    By.xpath("//button[@class=\"button loginButton\"]");
             public static By successfullRegistrationMessage =
                     By.xpath("//*[@id=\"coreRegistrationForm\"]");
-
         }
 
         public static class ShoppingCart {
@@ -76,8 +75,9 @@ public class Locators {
             public static By checkBoxOnDuty =
                     By.xpath("//*[@id=\"intuero\"]/div[4]/div[5]/div[1]/div[3]/div[2]/label/span");
             public static By chooseResult =
-                    By.xpath("//*[@class=\"address showSingle\"]");
-
+                    By.xpath("//*[@id=\"intuero\"]/div[4]/div[5]/div[2]/div[1]/div/div[3]/div/a");
+            public static By fieldPharmacySearchResult =
+                    By.xpath("//*[@id=\"intuero\"]/div[4]/div[5]/div[2]/div[1]/div/div[1]/div/div[3]/a/span[1]");
         }
     }
 }

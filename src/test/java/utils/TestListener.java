@@ -23,9 +23,7 @@ public class TestListener implements ITestListener {
 
         String directory = "./screenshots";
         File screenshotFile = new File(
-                directory + "/screenshot_" + fDateAndTime + "_" + UUID.randomUUID() + ".png"
-        );
-
+                directory + "/screenshot_" + fDateAndTime + "_" + UUID.randomUUID() + ".png");
         try {
             FileUtils.copyFile(screenshotRaw, screenshotFile);
         } catch (IOException e) {
@@ -39,5 +37,4 @@ public class TestListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
         takeScreenshot();
     }
-
 }

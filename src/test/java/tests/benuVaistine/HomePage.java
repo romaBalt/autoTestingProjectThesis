@@ -26,8 +26,6 @@ public class HomePage extends BaseTest {
         actualItem = pages.benuVaistine.HomePage.readSearchResult();
 
         Assert.assertTrue(actualItem.contains(expectedItem));
-
     }
-
 }
 
